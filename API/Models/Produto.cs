@@ -8,10 +8,11 @@ namespace API.Models{
         //public Produto(){
         //    CriadoEm = DateTime.Now;
         //}
-        //mesmo que..
+        //o mesmo que..
 
         public Produto() => CriadoEm = DateTime.Now;
 
+        //Atributos ou Propriedades
         public int Id { get; set; }
 
         public string Nome { get; set; }
@@ -26,6 +27,6 @@ namespace API.Models{
 
         //ToString
         public override string ToString() => 
-            $"Nome {Nome} | Preço: {Preco:C2} | Criado em: {CriadoEm}";
+            $"Nome: {Nome} | Preço: {Preco:C2} | Criado em: {CriadoEm}";
     }
 }
